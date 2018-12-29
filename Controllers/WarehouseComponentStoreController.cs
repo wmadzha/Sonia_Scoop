@@ -1,3 +1,4 @@
+// Sample Warehouse API Used In Enterprise Solution
 public class Warehouse_Component_StoreController : ApiController
 {
     [HttpGet]    
