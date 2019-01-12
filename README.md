@@ -14,7 +14,7 @@ Note : In this design case we are making use of In Memory Data.
 
 Infrastructure/Microservices Involved.
 
-1.Authenticaition/Token Provider - Identity Server 4
+1.Authentication/Token Provider - Identity Server 4
 
 2.Web API - Human Resource Module 
 
