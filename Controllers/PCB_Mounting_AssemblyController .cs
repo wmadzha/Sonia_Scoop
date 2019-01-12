@@ -2,6 +2,7 @@
 
 public class PCB_Mounting_AssemblyController : ApiController
 {
+    [AuthorizeEnterpriseClaim("smt_assembly_module", "assembly_basic_user")]
     [HttpGet]    
     public List<string> GetOnlineMountingMachine (string Date)
     {
@@ -9,6 +10,7 @@ public class PCB_Mounting_AssemblyController : ApiController
         // Return SMT Machine Running At A Specific Date
        return null;
     }
+    [AuthorizeEnterpriseClaim("smt_assembly_module", "assembly_basic_user")]
     [HttpGet]    
     public List<string> GetMachineOutput (string Date , string SMTMachineName)
     {
@@ -16,7 +18,7 @@ public class PCB_Mounting_AssemblyController : ApiController
        // Return PCB Board Ouput Serial Number Of A Specific Date Of A Particular SMT Machine 
        return null;
     }
-    
+    [AuthorizeEnterpriseClaim("smt_assembly_module", "assembly_manager")]
     [HttpGet]    
     public List<string> GetMachineOperators (string Date , string SMTMachineName)
     {
