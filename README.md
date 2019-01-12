@@ -26,3 +26,5 @@ Infrastructure/Microservices Involved.
 4.Web API - Product Assembly Line Module
 
 5.Web API - Warehouse Module
+
+// Note . The proposed design is based on requirement where role is the claims, it is advised to use policy as the permissions.
