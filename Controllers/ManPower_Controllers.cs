@@ -2,13 +2,16 @@
 
 public class ManPower_Controller : ApiController
 {
+   
+    [AuthorizeEnterpriseClaim("humanresource_module", "hr_manager")]
     [HttpGet]    
     public List<string> GetAllRegisteredManpower ()
     {
-        // Allowed For Operation Manager/Shift Manager/Assmbly Manager
+        // HR Manager
         // Return All Man Power Involved During Production
        return null;
     }
+    [AuthorizeEnterpriseClaim("humanresource_module", "operation_manager")]
     [HttpGet]    
     public List<string> GetManPowerPool (string Area)
     {
@@ -16,7 +19,7 @@ public class ManPower_Controller : ApiController
        // Return All Man Power At A Specific Area 
        return null;
     }
-    
+    [AuthorizeEnterpriseClaim("humanresource_module", "shift_manager")]
     [HttpGet]    
     public List<string> GetManPowerAreaShift (string Area,string Shift)
     {
