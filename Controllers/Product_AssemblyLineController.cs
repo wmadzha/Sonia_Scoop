@@ -2,6 +2,7 @@
 
 public class Product_AssemblyLineController : ApiController
 {
+    [AuthorizeEnterpriseClaim("product_assembly_module", "assembly_basic_user")]
     [HttpGet]    
     public List<string> GetRunningProductAssemblyLine (string Date )
     {
@@ -9,6 +10,7 @@ public class Product_AssemblyLineController : ApiController
         // Return Production Line Running At a Specific Date
        return null;
     }
+    [AuthorizeEnterpriseClaim("product_assembly_module", "assembly_basic_user")]
     [HttpGet]    
     public List<string> GetAssemblyProductionModelLine (string Date , string ModelCodeName)
     {
@@ -16,6 +18,7 @@ public class Product_AssemblyLineController : ApiController
         // Return Production Line Involve in Assembling A Specific Model At a Specific Date
        return null;
     }
+    [AuthorizeEnterpriseClaim("product_assembly_module", "assembly_manager")]
     [HttpGet]    
     public List<string> GetProductionLineOutput (string Date , string ProductionLine)
     {
