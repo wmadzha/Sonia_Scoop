@@ -1,3 +1,5 @@
+
+// In this example we are declaring a static Claims.
 public static class HumanResourceClaim
 {
     public static Claim HumanResource_Manager()
