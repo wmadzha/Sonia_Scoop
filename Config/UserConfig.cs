@@ -5,23 +5,16 @@ public static List<TestUser> GetUsers()
             {
                 new TestUser
                 {
-                    SubjectId = "ENT-1",
-                    Username = "Marianne",
-                    Password = "password",
-                    
+                    SubjectId = "ENT-1",Username = "Marianne",Password = "password",
                     Claims = new []
                     {
                         HumanResourceClaim.HumanResource_Operator(),
                         HumanResourceClaim.HumanResource_Manager(),
-
                     }
                 },
                 new TestUser
                 {
-                    SubjectId = "ENT-2",
-                    Username = "Lucy",
-                    Password = "password",
-
+                    SubjectId = "ENT-2",Username = "Lucy",Password = "password",
                     Claims = new []
                     {
                         SMTAssemblyModuleClaim.SMTModule_Basic(),
@@ -30,10 +23,7 @@ public static List<TestUser> GetUsers()
                 },
                  new TestUser
                 {
-                    SubjectId = "ENT-3",
-                    Username = "Adrianne",
-                    Password = "password",
-
+                    SubjectId = "ENT-3",Username = "Adrianne",Password = "password",
                     Claims = new []
                     {
                         WarehouseAssemblyModuleClaim.WarehouseAssemblyModule_Product(),
@@ -43,10 +33,7 @@ public static List<TestUser> GetUsers()
                 },
                   new TestUser
                 {
-                    SubjectId = "ENT-4",
-                    Username = "Tatianna",
-                    Password = "password",
-
+                    SubjectId = "ENT-4",Username = "Tatianna",Password = "password",
                     Claims = new []
                     {
                         WarehouseAssemblyModuleClaim.WarehouseAssemblyModule_Basic(),
@@ -55,10 +42,7 @@ public static List<TestUser> GetUsers()
                 },
                    new TestUser
                 {
-                    SubjectId = "ENT-5",
-                    Username = "Tania",
-                    Password = "password",
-
+                    SubjectId = "ENT-5",Username = "Tania",Password = "password",
                     Claims = new []
                     {
                         SMTAssemblyModuleClaim.SMTModule_Manager(),
