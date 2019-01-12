@@ -10,3 +10,12 @@ In this example design, we are trying to implement a specific company policy imp
 We are taking advantage of centralized solution using IdentityServer4
 
 Note : In this design case we are making use of In Memory Data.
+
+
+Infrastructure/Microservices Involved.
+
+1.Authenticaition/Token Provider - Identity Server 4
+2.Web API - Human Resource Module 
+3.Web API - SMT Machine Assembly Line Module
+4.Web API - Product Assembly Line Module
+5.Web API - Warehouse Module
