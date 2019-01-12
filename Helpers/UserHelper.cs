@@ -55,7 +55,7 @@ public static class WarehouseAssemblyModuleClaim
     }
     public static Claim WarehouseAssemblyModule_Product()
     {
-        return new Claim("warehouse_assembly_module", "warehouse_smt");
+        return new Claim("warehouse_assembly_module", "warehouse_product");
     }
     public static Claim WarehouseAssemblyModule_Packaging()
     {
