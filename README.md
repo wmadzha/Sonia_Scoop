@@ -28,3 +28,9 @@ Infrastructure/Microservices Involved.
 5.Web API - Warehouse Module
 
 // Note . The proposed design is based on requirement where role is the claims, it is advised to use policy as the permissions.
+
+# Special Thanks To 
+
+IdentityServer 4 : [View License](https://github.com/IdentityServer/IdentityServer4/blob/master/LICENSE)
+
+IdentityModel : [View License](https://github.com/IdentityModel/IdentityModel/blob/master/LICENSE) 
